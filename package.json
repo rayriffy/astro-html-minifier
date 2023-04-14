@@ -1,0 +1,40 @@
+{
+  "name": "astro-html-terser",
+  "version": "1.0.1",
+  "description": "Astro plugin to minify HTML by using Terser",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rayriffy/astro-html-terser.git"
+  },
+  "homepage": "https://github.com/rayriffy/astro-html-terser#readme",
+  "bugs": {
+    "url": "https://github.com/rayriffy/astro-html-terser/issues"
+  },
+  "author": "Phumrapee Limpianchop <mail@rayriffy.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "keywords": [
+    "astro",
+    "astro-integration",
+    "html",
+    "compression",
+    "minify"
+  ],
+  "dependencies": {
+    "html-minifier-terser": "7.2.0"
+  },
+  "devDependencies": {
+    "@types/html-minifier-terser": "7.0.0",
+    "@types/node": "18.15.11",
+    "astro": "2.3.0",
+    "typescript": "5.0.4"
+  }
+}
